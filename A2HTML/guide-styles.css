@@ -1,0 +1,426 @@
+body {
+    background-color: var(--bg-colour);
+    --hue: 240;
+    --bg-colour: hsl(0, 0%, 0%);
+    --mid-colour: hsl(0, 0%, 0%);
+
+}
+
+h1 {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: hsl(116, 48%, 33%);
+    margin-left: 10px;
+    font-size: 50px;
+    text-shadow: 2px 2px #71e164;
+}
+
+h2 {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    color: rgb(52, 52, 52);
+}
+
+h4 {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    justify-self: start;
+    color: rgb(45, 146, 60);
+}
+
+h5 {
+    font-family: "Press Start 2P", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+    place-self: center;
+}
+
+h6 {
+    font-family: "Prosto One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: hsl(240, 61%, 86%);
+    margin-left: 10px;
+    font-size: 40px;
+}
+
+.h7 {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: hsl(0, 0%, 0%);
+    font-size: 14px;
+    justify-self: center;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+section {
+    min-height: 2000px;
+    background-color: hsl(0, 0%, 0%);
+    margin-bottom: 50px;
+}
+
+
+.item-a {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    grid-area: headersticky;
+    background-color: var(--bg-colour);
+    border: 3px solid green;
+}
+
+.item-b {
+    grid-area: header;
+    margin: 10px;
+    background: linear-gradient(125deg, #303030, #000000);
+    border-radius: 10px;
+    box-shadow: 5px 10px 8px rgba(25, 54, 22, 0.5);
+
+
+}
+
+.item-c {
+    grid-area: main;
+
+}
+
+.item-d {
+    grid-area: footer;
+    background-color: black;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 500px 3000px 40px;
+    grid-template-areas:
+        "headersticky headersticky headersticky headersticky"
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer";
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 400px 400px 400px;
+
+    margin-top: 20px;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    place-items: center;
+}
+
+button {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+
+    width: 400px;
+    height: 400px;
+    justify-items: center;
+    color: rgb(0, 0, 0);
+
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.button2 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    width: 125px;
+    height: 125px;
+    border-radius: 25px;
+    background-color: rgb(210, 210, 227);
+    color: rgb(55, 55, 103);
+    grid-template-columns: 125px;
+    grid-template-rows: auto auto auto;
+
+}
+
+.button-ad {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    width: 280px;
+    height: 300px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(55, 55, 103);
+
+}
+
+button:hover {
+
+    background-color: rgb(255, 0, 0);
+    color: rgb(55, 55, 103);
+}
+
+.button2:hover {
+
+    background-color: rgb(40, 40, 97);
+    color: rgb(200, 200, 231);
+}
+
+
+.button2:active {
+    background-color: rgb(106, 106, 178);
+    color: rgb(37, 37, 66);
+
+}
+
+.move-a-bit {
+    margin-left: 227px;
+    margin-top: -20px;
+}
+
+.get-down {
+    margin-top: 140px;
+}
+
+.pump-it-down {
+    margin-top: 50px;
+}
+
+.lighten-up {
+    /* makes text lighter colour compared to normal attributed colour */
+    color: white;
+}
+
+.class-badge {
+    width: 90px;
+    height: 90px;
+    display: grid;
+    border-radius: 100px;
+    place-content: right;
+    position: relative;
+    left: 10px;
+    top: 10px;
+
+}
+
+.class-a {
+    /* Specified class for A level Planets (Nature-based ecosystem) */
+    background-color: rgb(60, 132, 60);
+    color: black;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.class-b {
+    /* Specified class for B level Planets (City-based ecosystem) */
+    background-color: rgb(204, 105, 62);
+    color: black;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.class-c {
+    /* Specified class for C level Planets (Tropical-based ecosystem) */
+    background-color: rgb(174, 174, 77);
+    color: black;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.class-d {
+    /* Specified class for D level Planets (Ocean-based ecosystem) */
+    background-color: rgb(59, 67, 155);
+    color: black;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.class-e {
+    /* Specified class for E level Planets (Economy-based ecosystem) */
+    background-color: rgb(126, 59, 155);
+    color: black;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+
+.background {
+    z-index: 0;
+}
+
+.logo {
+    justify-self: stretch;
+    display: flex;
+}
+
+.moving-ad {
+    animation: 10s infinite linear;
+    direction: right;
+    color: green;
+
+    font-family: "Oxanium", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    margin-top: -14px;
+}
+
+.header-space {
+    display: grid;
+    width: 100%;
+    height: 500px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    ;
+}
+
+.portrait {
+    width: 400px;
+    height: 420px;
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+    margin-left: 25px;
+}
+
+.align-beside {
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+}
+
+.align-p {
+    grid-column: 2 / 2;
+    grid-row: 2 / span 2;
+    align-self: start;
+    justify-self: start;
+    margin-top: 150px;
+    width: 750px;
+    font-size: 25px;
+    color: rgb(171, 225, 166);
+}
+
+.align-back-ad {
+    grid-column: 4 / 4;
+    grid-row: 2 / 2;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    place-self: center;
+}
+
+.class-box {
+    margin: auto;
+    width: 550px;
+    height: 260px;
+    background: linear-gradient(125deg, #000000, #101810);
+    border: 5px solid green;
+    align-self: start;
+}
+
+.class-box2 {
+    margin: auto;
+    width: 550px;
+    height: 250px;
+    background-color: rgb(155, 155, 155);
+    align-self: start;
+    border: 5px solid green;
+}
+
+.class-box3 {
+    margin: 0;
+    width: 550px;
+    height: 250px;
+    background-color: white;
+    margin-top: 100px;
+}
+
+.title-align {
+    font-size: 30px;
+    margin-top: -60px;
+    margin-left: 110px;
+}
+
+.class-p {
+    margin-left: 25px;
+    margin-top: 30px;
+    width: 320px;
+    height: 150px;
+    color: rgb(193, 229, 190);
+}
+
+.class-img {
+    width: 120px;
+    height: 120px;
+    float: right;
+    margin-top: -150px;
+    margin-right: 15px;
+}
+
+
+@media screen and (max-width: 1500px) {
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 400px 400px 400px;
+    }
+
+    .layout {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 200px 25% 4000px 20px;
+        grid-template-areas:
+            "headersticky headersticky headersticky headersticky"
+            "header header header header"
+            "main main main main"
+            "footer footer footer footer";
+    }
+
+    .align-back-ad {
+        grid-column: 1 / 1;
+        grid-row: 4 / 4;
+        width: 400px;
+        height: 400px;
+        background-color: white;
+        justify-self: start;
+        margin-left: 10px;
+    }
+
+    .align-p {
+        grid-column: 1 / 2;
+        grid-row: 2 / span 2;
+        align-self: start;
+        justify-self: start;
+        margin-top: 150px;
+        width: 750px;
+        font-size: 25px;
+        color: rgb(171, 225, 166);
+    }
+
+    .portrait {
+        width: 0px;
+    }
+
+    .align-beside {
+        grid-column: 1 / 1;
+        grid-row: 2 / 2;
+    }
+}
